@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BuzzingA!!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+    
+<body>
+      <!--HEADER-->
+        <div id="intro">
+            <h1>RPSLS</h1>
+            <div id="reset">
+                <a id="rules" class="button" href="rpsls.jpg">Game Rules</a>
+                <a class="reset button">Reset Game</a>
+            </div>
+            <hr>
+        </div>
+
+        <div id="gameplay">
+            <h1>Pick your Move :</h1>
+            <div id="choice">
+                <ul>
+                    <li id="rock"><a href="javascript:void(0);" class="grey">R<i class="fas fa-hand-rock"></i>ck</a></li>
+                    <li id="paper"><a href="javascript:void(0);" class="red">Pap<i class="fas fa-hand-paper"></i>r</a></li>
+                    <li id="scissors"><a href="javascript:void(0);" class="blue">S<i class="fas fa-hand-scissors"></i>issors</a></li>
+                    <li id="lizard"><a href="javascript:void(0);" class="green">L<i class="fas fa-hand-lizard"></i>zard</a></li>
+                    <li id="spock"><a href="javascript:void(0);" class="light-blue">Sp<i class="fas fa-hand-spock"></i>ck</a></li>
+               </ul>
+            </div>
+            <h2><span id="user-choice"></span><span id="comp-choice"></span></h2>
+            <div class="result">
+                <h2></h2>
+            </div>
+        </div>
+
+        <div id="score">
+            <h2>Score :</h2>
+            <div class="win">
+                <h1>You</h1>
+                <h2>0</h2>
+            </div>
+            <div class="lose">
+                <h1>Computer</h1>
+                <h2>0</h2>
+            </div>
+        </div>
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+

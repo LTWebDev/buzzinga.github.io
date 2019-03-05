@@ -1,0 +1,217 @@
+/***
+GENERAL
+***/
+html {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+body {
+	background-color: #3F6D81;
+	height: 100%;
+	color: #FFF;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.button {
+    display: inline-block;
+    padding: 7px 7px;
+    color: #3F6D81;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F5F3C3;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.button:hover {
+  color: #F5F3C3;
+  background-color: #3F6D81;
+}
+
+/*** 
+CHOICES
+***/
+#choice a {
+    text-decoration: none;
+    color: #F5F3C3;
+    font-size: 1.3em
+}
+#choice ul {
+	margin: 30px 0;
+	list-style: none;
+    background-color: black;
+    border: 1px solid #F5F3C3;
+    border-radius: 5px;
+}
+#choice ul li {
+	display: inline-block;
+	padding: 15px;
+	max-height: 80px;
+    max-width: 80px;
+}
+
+/*** 
+HEADER
+***/
+#intro {
+    display: flex;
+	margin: 0px auto;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 50px;
+	width: 100%;
+}
+/*rules*/
+#overlay {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+#reset {
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+	height: 26px;
+	width: 100%;
+}
+hr {
+    margin: 20px auto; 
+    width: 50%;
+    border: 1px solid #F5F3C3;
+    color: #F5F3C3;
+}
+
+/*** 
+ICONS
+***/
+#gameplay {
+	height: 260px;
+	max-width: 75%;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+}
+#gameplay h1, h2 {
+	font-size: 1.2em;
+}
+/*paper*/
+.red:hover {
+	-webkit-box-shadow: 0 0 50px 6px rgba(231, 95, 74, 0.75);
+	-moz-box-shadow: 0 0 50px 6px rgba(231, 95, 74, 0.75);
+	box-shadow: 0 0 50px 6px rgba(231, 95, 74, 0.75);
+}
+#choice .red:hover  {
+  color: rgb(231, 95, 74);
+}
+/*rock*/
+.grey:hover {
+	-webkit-box-shadow: 0 0 50px 6px rgba(191, 191, 191, 0.75);
+	-moz-box-shadow: 0 0 50px 6px rgba(191, 191, 191, 0.75);
+	box-shadow: 0 0 50px 6px rgba(191, 191, 191, 0.75);
+}
+#choice .grey:hover  {
+  color: rgb(191, 191, 191);
+}
+/*scissors*/
+.blue:hover {
+	-webkit-box-shadow: 0 0 50px 6px rgba(120, 150, 178, 0.75);
+	-moz-box-shadow: 0 0 50px 6px rgba(120, 150, 178, 0.75);
+	box-shadow: 0 0 50px 6px rgba(120, 150, 178, 0.75);
+}
+#choice .blue:hover  {
+  color: rgb(120, 150, 178);
+}
+/*lezard*/
+.green:hover {
+	-webkit-box-shadow: 0 0 50px 6px rgba(197, 221, 145, 0.75);
+	-moz-box-shadow: 0 0 50px 6px rgba(197, 221, 145, 0.75);
+	box-shadow: 0 0 50px 6px rgba(197, 221, 145, 0.75);
+}
+#choice .green:hover  {
+  color: rgb(197, 221, 145);
+}
+/*spock*/
+.light-blue:hover {
+	-webkit-box-shadow: 0 0 50px 6px rgba(214, 232, 244, 0.75);
+	-moz-box-shadow: 0 0 50px 6px rgba(214, 232, 244, 0.75);
+	box-shadow: 0 0 50px 6px rgba(214, 232, 244, 0.75);
+}
+#choice .light-blue:hover  {
+  color: rgb(214, 232, 244);
+}
+
+/*** 
+SCORE
+***/
+#score {
+	margin: 30px auto;
+	text-align: center;
+	height: 100px;
+	width: 75%;
+	position: relative;
+	background-color: transparent;
+}
+.win, .lose {
+	position: relative;
+	text-align: center;
+}
+.win {
+	float: left;
+	position: relative;
+/*	background-color: #F5F3C3;*/
+	width: 50%;
+	text-align: center;
+}
+.win h1 {
+	margin: 8px 0;
+	background-color: #3F6D81;
+	font-size: 1.2em;
+}
+.win h2 {
+	margin: 8px 0;
+	font-size: 1.2em;
+    background-color: #F5F3C3;
+    color: black;
+}
+.lose {
+	float: right;
+	position: relative;
+/*	background-color: #F5F3C3;*/
+	width: 50%;
+	text-align: center;
+}
+.lose h1 {
+	margin: 8px 0;
+	background-color: #3F6D81;
+	font-size: 1.2em;
+}
+.lose h2 {
+	margin: 8px 0;
+	font-size: 1.2em;
+    background-color: #F5F3C3;
+    color: black;
+}
+.result {
+	text-align: center;
+	margin: 10px;
+	font-size: 1.2em;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    #score {
+        margin: 50px auto;
+        text-align: center;
+        height: 100px;
+        width: 75%;
+        position: relative;
+        background-color: transparent;
+    }
+}
